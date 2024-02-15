@@ -80,7 +80,7 @@
     </nav>
     <section>
         <h2>Contáctanos</h2>
-        <form action="#" method="post">
+        <form id="contactForm" action="#" method="post">
             <label for="name">Nombre:</label>
             <input type="text" id="name" name="name" required>
             <label for="email">Correo Electrónico:</label>
@@ -89,7 +89,9 @@
             <textarea id="message" name="message" rows="4" required></textarea>
             <input type="submit" value="Enviar">
         </form>
+        <div id="errorMessage" class="error" style="display: none;">Por favor, complete todos los campos.</div>
     </section>
+   
     <footer>
         <p>&copy; 2024 Clínica de Especialidades Médicas. Todos los derechos reservados.</p>
     </footer>
