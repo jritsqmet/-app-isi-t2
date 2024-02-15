@@ -1,0 +1,25 @@
+Documento: Explicación del funcionamiento del código para la página de especialidades
+
+1. HTML (especialidades.html):
+   - Estructura básica del documento HTML con etiquetas <html>, <head> y <body>.
+   - Se incluyen metaetiquetas para el conjunto de caracteres y la vista del portapapeles.
+   - Se establece el título de la página como "Especialidades - Clínica de Especialidades Médicas".
+   - Se añaden estilos CSS dentro de la etiqueta <style> para dar formato al contenido.
+   - El cuerpo del documento contiene:
+     - Un encabezado (<header>) con el nombre de la clínica.
+     - Una barra de navegación (<nav>) con enlaces a otras páginas del sitio.
+     - Secciones (<section>) para cada especialidad médica, cada una con un identificador único (id).
+     - Un pie de página (<footer>) con los derechos de autor.
+
+2. JavaScript (especialidades.js):
+   - Se utiliza el método addEventListener para escuchar el evento 'DOMContentLoaded', que se activa cuando el DOM ha sido completamente cargado y parseado.
+   - Se seleccionan todos los enlaces dentro de la barra de navegación que tienen un atributo href que comienza con "#" (indicando enlaces internos dentro de la misma página).
+   - Para cada enlace seleccionado, se agrega un event listener para el evento 'click'.
+   - Cuando se hace clic en un enlace de especialidad:
+     - Se previene el comportamiento predeterminado del enlace (navegar a una nueva página).
+     - Se obtiene el valor del atributo href del enlace, eliminando el "#" para obtener el ID del elemento de destino.
+     - Se obtiene el elemento de destino con el ID correspondiente.
+     - Se utiliza el método scrollIntoView() con la opción 'smooth' para realizar un desplazamiento suave hacia el elemento de destino.
+
+Este código HTML y JavaScript crea una página de especialidades médicas donde los usuarios pueden hacer clic en enlaces de navegación para desplazarse suavemente hacia la sección correspondiente en la misma página.
+    
